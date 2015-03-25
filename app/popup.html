@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app=popup ng-csp>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- build:css popup.css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="screen">
+        <link rel="stylesheet" href="css/angular-csp.css" type="screen">
+        <link rel="stylesheet" href="css/popup.css" type="screen">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- endbuild -->
+    <title>Popup Extension</title>
+  </head>
+
+  <body>
+
+    <div ng-controller="MainController">
+        <h1>Hey! {{welcomeMsg}}</h1>
+        <h3>{{name}}</h3>
+
+        <div class="row col-md-4">
+          <input class="form-control" ng-model="name" placeholder="Write your name">
+        </div>
+
+        <div class="row col-md-4">
+          <a class="btn btn-info" ng-click="show_options()">Options Page</a>
+        </div>
+    </div>
+
+    <!-- build:js popup.js -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/underscore/underscore.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/angular/angular.min.js"></script>
+    <script src="scripts/app/modules/angular-underscore.min.js"></script>
+    <script src="scripts/app/modules/ui-bootstrap-0.9.0.min.js"></script>
+    <script src="scripts/app/app.js"></script>
+    <script src="scripts/app/services/storage.js"></script>
+    <script src="scripts/app/controllers/controllers.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
