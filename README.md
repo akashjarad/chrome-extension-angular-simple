@@ -41,4 +41,4 @@ See some slides about creating chrome extensions [here](http://www.slideshare.ne
 * app/popup.html
 
 ## Releases
-- `0.1` May 2014 First version released
+- `0.1` First version released
